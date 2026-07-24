@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>리얼미 · 왜 소개팅에서 자꾸 까일까요? — 30분 진단이면 답이 나옵니다</title>
-<meta name="description" content="연봉도 성격도 괜찮은데 소개팅에서 자꾸 까이는 이유. 남성 이미지 컨설팅 리얼미가 얼굴형·체형·톤을 30분 만에 진단해 명확한 답을 드립니다. 송파나루역 도보 2분, 2,000명+ 후기." />
+<meta name="description" content="연봉도 성격도 괜찮은데 소개팅에서 자꾸 까이는 이유. 남성 이미지 컨설팅 리얼미가 얼굴형·체형·톤을 30분 만에 진단해 명확한 답을 드립니다. 잠실 프라이빗 쇼룸, 2,000명+ 후기." />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="리얼미 · 왜 소개팅에서 자꾸 까일까요?" />
@@ -47,6 +47,25 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style-ink.css?v=20260722a" />
+<style>
+/* 2026-07-24 인라인 보정: 스텝(제목-사진-내용) 레이아웃 + 쇼룸 통계 스트립 + 쇼룸 사진 확대 */
+.svc-head{text-align:center;}
+.svc-head .svc-step{margin-bottom:6px;}
+.svc-head .svc-title{font-size:26px;margin-bottom:0;}
+.svc-media{max-width:440px;margin:0 auto;}
+.svc-body{width:100%;max-width:520px;margin:0 auto;}
+.stats-strip{display:flex;justify-content:center;gap:38px;margin:26px auto 2px;text-align:center;}
+.stats-strip .stat b{display:block;font-family:'Libre Bodoni',serif;font-size:30px;font-weight:700;color:var(--lime);line-height:1.25;}
+.stats-strip .stat span{font-size:12.5px;color:var(--muted);}
+.shroom-img{flex:0 0 440px;}
+@media (max-width:600px){ .shroom-img{flex:0 0 320px;} }
+@media (max-width:520px){
+  .svc-head .svc-title{font-size:22px;}
+  .svc-media{max-width:330px;}
+  .stats-strip{gap:22px;}
+  .stats-strip .stat b{font-size:23px;}
+}
+</style>
 
 <!-- ▼ 시라노 상세페이지 전용 추가 스타일 (긴급성 배너 · 요금 티어 · 지도 · 푸터) -->
 <style>
@@ -166,12 +185,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="eyebrow">READY TO CHANGE</div>
     <h2 class="sec-title">혹시 비포 사진에서<br><em>내 모습이 보이나요?</em></h2>
     <div class="pain-list">
-      <div class="pain-card"><span class="pain-no">01</span><p>소개팅 전에 사진 보내달래서 보냈더니, "제 스타일이 아니에요"라며 거절당했어요.</p></div>
-      <div class="pain-card"><span class="pain-no">02</span><p>누군가의 앞에 설 때 자신감이 부족해요.</p></div>
-      <div class="pain-card"><span class="pain-no">03</span><p>소개팅 날에도 늘 입던 옷만, 뭘 입어야 할지 모르겠어요.</p></div>
-      <div class="pain-card"><span class="pain-no">04</span><p>조건은 괜찮다는데, 자기 스타일이 아니라고 거절당했어요.</p></div>
+      <div class="pain-card"><span class="pain-no">01</span><p>옷은 보통 엄마나 여자친구, 동생이 사준 것을 입었어요.</p></div>
+      <div class="pain-card"><span class="pain-no">02</span><p>무*사, 유니*로 마네킹이 입은 옷 중 괜찮아 보이는 걸 사는데, 막상 제가 입으면 안 어울릴 때가 많아요.</p></div>
+      <div class="pain-card"><span class="pain-no">03</span><p>체크셔츠에 청바지, 백팩. 대학 때부터 입던 '공대생 유니폼' 그대로예요.</p></div>
+      <div class="pain-card"><span class="pain-no">04</span><p>어깨도 좁고 배도 나오고. 몸을 가리기 위해서 어둡고 두꺼운 옷만 입었어요.</p></div>
+      <div class="pain-card"><span class="pain-no">05</span><p>그냥 "아저씨 같다"는 말을 들었어요.</p></div>
     </div>
-    <p class="pain-close">모두 리얼미를 만나 <em>연애를 시작하기 전</em>,<br>고객분들의 걱정이었어요.</p>
+    <p class="pain-close">전부, 리얼미 고객분들이<br><em>첫 상담에서 실제로 하신 말</em>이에요.</p>
   </section>
 
   <!-- ===== 3. 그동안 왜 안 됐을까 ===== -->
@@ -196,66 +216,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="whyfail-close">세 가지 모두 딱 한 가지가 빠져 있습니다.<br><b>나에게 맞춰 정리해주고, <br>소개팅 자리에서도 혼자 유지할 수 있는 기준</b>입니다.<br><b class="wf-punch">리얼미는 바로 그 기준을 만들어 드립니다.</b></p>
   </section>
 
-  <!-- ===== 4. 서비스 상세 ===== -->
-  <section class="service" data-reveal>
-    <div class="eyebrow">HOW IT WORKS</div>
-    <h2 class="sec-title">리얼미는 이렇게 <em>진행</em>됩니다</h2>
-    <p class="sec-sub">원데이 플랜으로 시작해, 지속 유지 가능한 멤버십으로 이어집니다.</p>
-
-    <!-- STEP 1 · 원데이 플랜 -->
-    <div class="svc-block">
-      <div class="svc-media">
-        <div class="svc-carousel">
-          <div class="svc-ctrack">
-            <div class="svc-slide imgslot r43" data-label="service-2-1.jpg"><img src="images/service-2-1.jpg" alt="원데이 디렉팅 1" onerror="this.style.display='none'"></div>
-            <div class="svc-slide imgslot r43" data-label="service-2-2.jpg"><img src="images/service-2-2.jpg" alt="원데이 디렉팅 2" onerror="this.style.display='none'"></div>
-            <div class="svc-slide imgslot r43" data-label="service-2-3.jpg"><img src="images/service-2-3.jpg" alt="원데이 디렉팅 3" onerror="this.style.display='none'"></div>
-          </div>
-          <button class="svc-nav prev" aria-label="이전">‹</button>
-          <button class="svc-nav next" aria-label="다음">›</button>
-          <div class="svc-dots"></div>
-        </div>
-      </div>
-      <div class="svc-body">
-        <span class="svc-step">STEP 1 · 원데이 플랜 · 2시간 내외</span>
-        <h3 class="svc-title">소개팅에서 통하는 나로</h3>
-          <ul class="svc-list">
-          <li>얼굴형·체형·피부톤·분위기까지 1:1 이미지 진단</li>
-          <li>지금 이성에게 어떤 인상으로 보이는지 객관적으로 파악</li>
-          <li>소개팅룩부터 데일리룩까지, 어울리는 색·핏으로 직접 입어보며 디렉팅</li>
-          <li>헤어·눈썹·피부 표현 등 첫인상을 좌우하는 디테일까지</li>
-          <li>소매 접는 법·핏 잡는 법까지 '혼자서도 유지하도록' 교육</li>
-          <li>자연스러운 소개팅·SNS 프로필 사진 촬영</li>
-          <li>끝난 뒤에도 참고하는 나만의 스타일 기준표 제공</li>
-        </ul>
-      </div>
+  <!-- ===== 5.5 쇼룸 갤러리 ===== -->
+  <section class="showroom" data-reveal>
+    <div class="eyebrow">OUR SHOWROOM</div>
+    <h2 class="sec-title">구로 · 잠실 2호점<br><em>100평 프라이빗 쇼룸</em></h2>
+    <p class="sec-sub">이 규모의 남성 전문 스타일링 쇼룸, 어디서도 보기 어렵습니다.<br>이 공간 안에서 진단부터 스타일링까지 모든 게 끝납니다.</p>
+    <div class="stats-strip">
+      <div class="stat"><b>3,000+</b><span>누적 방문 고객</span></div>
+      <div class="stat"><b>90,000+</b><span>누적 스타일링 시간</span></div>
+      <div class="stat"><b>18,000+</b><span>스타일링 의류</span></div>
     </div>
-
-    <!-- STEP 2 · 멤버십 -->
-    <div class="svc-block reverse">
-      <div class="svc-media">
-        <div class="svc-carousel">
-          <div class="svc-ctrack">
-            <div class="svc-slide imgslot r43" data-label="service-3-1.jpg"><img src="images/service-3-1.jpg" alt="멤버십 1" onerror="this.style.display='none'"></div>
-            <div class="svc-slide imgslot r43" data-label="service-3-2.jpg"><img src="images/service-3-2.jpg" alt="멤버십 2" onerror="this.style.display='none'"></div>
-            <div class="svc-slide imgslot r43" data-label="service-3-3.jpg"><img src="images/service-3-3.jpg" alt="멤버십 3" onerror="this.style.display='none'"></div>
-          </div>
-          <button class="svc-nav prev" aria-label="이전">‹</button>
-          <button class="svc-nav next" aria-label="다음">›</button>
-          <div class="svc-dots"></div>
-        </div>
-      </div>
-      <div class="svc-body">
-        <span class="svc-step">STEP 2 · 멤버십 · 지속 관리</span>
-        <h3 class="svc-title">소개팅부터 결혼까지</h3>
-          <ul class="svc-list">
-          <li>적립금을 충전해 방문할 때마다 차감하는 방식</li>
-          <li>소개팅·데이트·상견례 등 중요한 자리마다 다시 디렉팅 (무료)</li>
-          <li>상황별 코디 제안: 첫 만남, 여행 데이트, 부모님 인사 자리까지</li>
-          <li>계절이 바뀔 때마다 시즌 룩 업데이트</li>
-          <li>디렉팅 중 입어본 옷이 마음에 들면 현장에서 구매 가능</li>
-          <li>연애가 시작된 뒤에도, 관계가 깊어질수록 이미지 관리 지속</li>
-               </ul>
+    <div class="shroom-marquee">
+      <div class="shroom-track" id="shroomTrack">
+        <div class="imgslot r43 shroom-img" data-label="showroom-1.jpg"><img src="images/showroom-1.jpg" alt="리얼미 쇼룸 1" onerror="this.style.display='none'"></div>
+        <div class="imgslot r43 shroom-img" data-label="showroom-2.jpg"><img src="images/showroom-2.jpg" alt="리얼미 쇼룸 2" onerror="this.style.display='none'"></div>
+        <div class="imgslot r43 shroom-img" data-label="showroom-3.jpg"><img src="images/showroom-3.jpg" alt="리얼미 쇼룸 3" onerror="this.style.display='none'"></div>
+        <div class="imgslot r43 shroom-img" data-label="showroom-4.jpg"><img src="images/showroom-4.jpg" alt="리얼미 쇼룸 4" onerror="this.style.display='none'"></div>
+        <div class="imgslot r43 shroom-img" data-label="showroom-5.jpg"><img src="images/showroom-5.jpg" alt="리얼미 쇼룸 5" onerror="this.style.display='none'"></div>
+        <div class="imgslot r43 shroom-img" data-label="showroom-6.jpg"><img src="images/showroom-6.jpg" alt="리얼미 쇼룸 6" onerror="this.style.display='none'"></div>
+        <div class="imgslot r43 shroom-img" data-label="showroom-7.jpg"><img src="images/showroom-7.jpg" alt="리얼미 쇼룸 7" onerror="this.style.display='none'"></div>
+        <div class="imgslot r43 shroom-img" data-label="showroom-8.jpg"><img src="images/showroom-8.jpg" alt="리얼미 쇼룸 8" onerror="this.style.display='none'"></div>
       </div>
     </div>
   </section>
@@ -283,27 +263,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="whyus-card">
         <span class="whyus-ico">04</span>
-        <h3>송파나루역 도보 2분, 60평 쇼룸 5개</h3>
-        <p>9호선 송파나루역에서 도보 2분 거리에 60평 규모 쇼룸 5개를 갖췄습니다. 발품 팔며 매장을 도는 동행쇼핑과 달리, 한자리에 편히 앉아 충분히 입어보고 완성해요. 직원 눈치도 없습니다.</p>
+        <h3>유니클로 본사 · 글로벌 프라이빗 쇼퍼</h3>
+        <p>유니클로 본사 MD·디자이너, 해외 VIP 자산가를 전담하던 글로벌 프라이빗 쇼퍼 출신 디렉터가 직접 진행합니다. 유행을 그대로 따라가는 코디가 아니라, 내 체형과 상황에 맞는 스타일을 1:1로 잡아 드립니다.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== 5.5 쇼룸 갤러리 ===== -->
-  <section class="showroom" data-reveal>
-    <div class="eyebrow">OUR SHOWROOM</div>
-    <h2 class="sec-title">송파나루역 60평 <em>프라이빗 쇼룸</em></h2>
-    <p class="sec-sub">발품 파는 동행쇼핑 없이, 이 공간 안에서 모든 게 끝납니다.</p>
-    <div class="shroom-marquee">
-      <div class="shroom-track" id="shroomTrack">
-        <div class="imgslot r43 shroom-img" data-label="showroom-1.jpg"><img src="images/showroom-1.jpg" alt="리얼미 쇼룸 1" onerror="this.style.display='none'"></div>
-        <div class="imgslot r43 shroom-img" data-label="showroom-2.jpg"><img src="images/showroom-2.jpg" alt="리얼미 쇼룸 2" onerror="this.style.display='none'"></div>
-        <div class="imgslot r43 shroom-img" data-label="showroom-3.jpg"><img src="images/showroom-3.jpg" alt="리얼미 쇼룸 3" onerror="this.style.display='none'"></div>
-        <div class="imgslot r43 shroom-img" data-label="showroom-4.jpg"><img src="images/showroom-4.jpg" alt="리얼미 쇼룸 4" onerror="this.style.display='none'"></div>
-        <div class="imgslot r43 shroom-img" data-label="showroom-5.jpg"><img src="images/showroom-5.jpg" alt="리얼미 쇼룸 5" onerror="this.style.display='none'"></div>
-        <div class="imgslot r43 shroom-img" data-label="showroom-6.jpg"><img src="images/showroom-6.jpg" alt="리얼미 쇼룸 6" onerror="this.style.display='none'"></div>
-        <div class="imgslot r43 shroom-img" data-label="showroom-7.jpg"><img src="images/showroom-7.jpg" alt="리얼미 쇼룸 7" onerror="this.style.display='none'"></div>
-        <div class="imgslot r43 shroom-img" data-label="showroom-8.jpg"><img src="images/showroom-8.jpg" alt="리얼미 쇼룸 8" onerror="this.style.display='none'"></div>
+  <!-- ===== 4. 서비스 상세 ===== -->
+  <section class="service" data-reveal>
+    <div class="eyebrow">HOW IT WORKS</div>
+    <h2 class="sec-title">리얼미는 이렇게 <em>진행</em>됩니다</h2>
+    <p class="sec-sub">원데이 플랜으로 시작해, 지속 유지 가능한 멤버십으로 이어집니다.</p>
+
+    <!-- STEP 1 · 원데이 플랜 -->
+    <div class="svc-block">
+            <div class="svc-head">
+        <span class="svc-step">STEP 1 · 원데이 플랜 · 2시간 내외</span>
+        <h3 class="svc-title">소개팅에서 통하는 나로</h3>
+      </div>
+      <div class="svc-media">
+        <div class="svc-carousel">
+          <div class="svc-ctrack">
+            <div class="svc-slide imgslot r43" data-label="service-2-1.jpg"><img src="images/service-2-1.jpg" alt="원데이 디렉팅 1" onerror="this.style.display='none'"></div>
+            <div class="svc-slide imgslot r43" data-label="service-2-2.jpg"><img src="images/service-2-2.jpg" alt="원데이 디렉팅 2" onerror="this.style.display='none'"></div>
+            <div class="svc-slide imgslot r43" data-label="service-2-3.jpg"><img src="images/service-2-3.jpg" alt="원데이 디렉팅 3" onerror="this.style.display='none'"></div>
+          </div>
+          <button class="svc-nav prev" aria-label="이전">‹</button>
+          <button class="svc-nav next" aria-label="다음">›</button>
+          <div class="svc-dots"></div>
+        </div>
+      </div>
+      <div class="svc-body">
+          <ul class="svc-list">
+          <li>얼굴형·체형·피부톤·분위기까지 1:1 이미지 진단</li>
+          <li>지금 이성에게 어떤 인상으로 보이는지 객관적으로 파악</li>
+          <li>소개팅룩부터 데일리룩까지, 어울리는 색·핏으로 직접 입어보며 디렉팅</li>
+          <li>헤어·눈썹·피부 표현 등 첫인상을 좌우하는 디테일까지</li>
+          <li>소매 접는 법·핏 잡는 법까지 '혼자서도 유지하도록' 교육</li>
+          <li>자연스러운 소개팅·SNS 프로필 사진 촬영</li>
+          <li>끝난 뒤에도 참고하는 나만의 스타일 기준표 제공</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STEP 2 · 멤버십 -->
+    <div class="svc-block reverse">
+            <div class="svc-head">
+        <span class="svc-step">STEP 2 · 멤버십 · 지속 관리</span>
+        <h3 class="svc-title">소개팅부터 결혼까지</h3>
+      </div>
+      <div class="svc-media">
+        <div class="svc-carousel">
+          <div class="svc-ctrack">
+            <div class="svc-slide imgslot r43" data-label="service-3-1.jpg"><img src="images/service-3-1.jpg" alt="멤버십 1" onerror="this.style.display='none'"></div>
+            <div class="svc-slide imgslot r43" data-label="service-3-2.jpg"><img src="images/service-3-2.jpg" alt="멤버십 2" onerror="this.style.display='none'"></div>
+            <div class="svc-slide imgslot r43" data-label="service-3-3.jpg"><img src="images/service-3-3.jpg" alt="멤버십 3" onerror="this.style.display='none'"></div>
+          </div>
+          <button class="svc-nav prev" aria-label="이전">‹</button>
+          <button class="svc-nav next" aria-label="다음">›</button>
+          <div class="svc-dots"></div>
+        </div>
+      </div>
+      <div class="svc-body">
+          <ul class="svc-list">
+          <li>적립금을 충전해 방문할 때마다 차감하는 방식</li>
+          <li>소개팅·데이트·상견례 등 중요한 자리마다 다시 디렉팅 (무료)</li>
+          <li>상황별 코디 제안: 첫 만남, 여행 데이트, 부모님 인사 자리까지</li>
+          <li>계절이 바뀔 때마다 시즌 룩 업데이트</li>
+          <li>디렉팅 중 입어본 옷이 마음에 들면 현장에서 구매 가능</li>
+          <li>연애가 시작된 뒤에도, 관계가 깊어질수록 이미지 관리 지속</li>
+               </ul>
       </div>
     </div>
   </section>
@@ -390,7 +419,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>오히려 그런 분들을 위한 서비스입니다. 기준이 없던 분일수록 변화의 폭이 큽니다. 소개팅을 앞두고 아무것도 몰라도, 디렉터가 처음부터 하나씩 잡아 드립니다.</p>
       </details>
       <details class="faq-item">
-        <summary>꼭 송파나루역 쇼룸에 방문해야 하나요?</summary>
+        <summary>꼭 잠실 쇼룸에 방문해야 하나요?</summary>
         <p>네. 대면 디렉팅과 직접 입어보는 피팅이 핵심이라 방문이 필요합니다. 100% 사전예약제로 운영되며, 쇼룸 방문이 가능한 분만 신청해주세요.</p>
       </details>
       <details class="faq-item">
@@ -415,11 +444,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="info-table">
       <div class="info-row"><span>운영 시간</span><b>10:00 ~ 19:00</b></div>
-      <div class="info-row"><span>진행 장소</span><b>9호선 송파나루역 도보 2분</b></div>
+      <div class="info-row"><span>진행 장소</span><b>잠실 프라이빗 쇼룸</b></div>
       <div class="info-row"><span>예약 안내</span><b>100% 사전예약제</b></div>
     </div>
     <div class="info-notice">
-      <p>리얼미 디렉팅은 <b>9호선 송파나루역 쇼룸 방문</b>으로 진행됩니다.<br>쇼룸 방문이 가능한 분만 신청해주세요!<br><b>💬 예약·문의는 담당 매니저에게 연락해 주세요</b></p>
+      <p>리얼미 디렉팅은 <b>잠실 쇼룸 방문</b>으로 진행됩니다.<br>쇼룸 방문이 가능한 분만 신청해주세요!<br><b>💬 예약·문의는 담당 매니저에게 연락해 주세요</b></p>
     </div>
 
   </section>
@@ -428,7 +457,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="location" data-reveal>
     <div class="eyebrow">LOCATION</div>
     <h2 class="sec-title">찾아오시는 길</h2>
-    <p class="sec-sub">9호선 송파나루역 도보 2분 · 예약 후 방문해 주세요</p>
+    <p class="sec-sub">잠실 프라이빗 쇼룸 · 예약 후 방문해 주세요</p>
     <div style="max-width:760px;margin:22px auto 0;">
       <div class="map-wrap">
         <iframe
