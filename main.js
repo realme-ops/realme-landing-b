@@ -233,4 +233,23 @@
     if (!track) return;
     track.innerHTML += track.innerHTML; // 2배 복제 → CSS translateX(-50%) 루프가 seamless
   })();
+
+  /* ===== 섹션 도달 트래킹 (2026-08-24) =====
+     data-sec 달린 섹션의 상단이 화면 하단 35% 지점을 지나면 GA4 이벤트 1회 발사.
+     이벤트명 = data-sec 값(chg_s01_hero ~ chg_s12_apply). 섹션 구성이 할인 상세형(disc_)과
+     1:1로 같아서 꼬리 라벨을 disc_와 동일하게 맞춰둠 — 두 랜딩 섹션 퍼널을 나란히 비교 가능.
+     픽셀(fbq)에는 안 보냄(노이즈 방지). */
+  (function () {
+    var secs = document.querySelectorAll("[data-sec]");
+    if (!secs.length || !("IntersectionObserver" in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var name = en.target.getAttribute("data-sec");
+        io.unobserve(en.target);
+        try { if (typeof window.gtag === "function") window.gtag("event", name, { landing: "cyrano" }); } catch (e) {}
+      });
+    }, { threshold: 0, rootMargin: "0px 0px -35% 0px" });
+    secs.forEach(function (el) { io.observe(el); });
+  })();
 })();
